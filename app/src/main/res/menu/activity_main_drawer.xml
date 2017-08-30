@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/nav_systems"
+            android:icon="@drawable/ic_settings_system_daydream_black_24px"
+            android:title="@string/managesystems" />
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_contact_mail_black_24px"
+            android:title="@string/contactus" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24px"
+            android:title="@string/logout" />
+</menu>

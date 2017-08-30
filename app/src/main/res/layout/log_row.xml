@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/log_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/log_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/log_image"
+            android:textSize="16dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textColor="@color/log_title"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/log_textview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/log_image"
+            android:textSize="14dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@color/log_title"
+            android:textStyle="bold"
+            android:layout_below="@id/log_textview"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

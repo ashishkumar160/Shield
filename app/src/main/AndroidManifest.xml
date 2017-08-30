@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iohertz.ashish.shield">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".View.Home.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".View.Systems.ManageSystemsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Voicemail.VoicemailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Contact.ContactUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Users.AddUsersActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Systems.AddSystemActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.Devices.AddDeviceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.LoginSignup.LoginSignupActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

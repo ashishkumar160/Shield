@@ -1,0 +1,30 @@
+package com.iohertz.ashish.shield.View.LoginSignup;
+
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.iohertz.ashish.shield.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class LoginSignUpFragment extends Fragment {
+
+
+    public LoginSignUpFragment() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_login_sign_up, container, false);
+    }
+
+}

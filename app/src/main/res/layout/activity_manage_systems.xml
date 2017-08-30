@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_manage_systems"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.iohertz.ashish.shield.View.Systems.ManageSystemsActivity">
+
+    <include
+        android:id="@+id/manage_systems_appbar"
+        layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/manage_systems_appbar"
+        android:id="@+id/systems_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <Button android:id="@+id/btn_add_system"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_system"
+        android:onClick="addSystem"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="60dp"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
